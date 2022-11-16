@@ -1,3 +1,8 @@
+// initScene and renderScene are written based on code from:
+// https://github.com/intel/generic-sensor-demos
+// here you can find license
+// https://github.com/intel/generic-sensor-demos/blob/main/LICENSE
+
 (function () {
 	let container, camera, scene, renderer, model;
 
