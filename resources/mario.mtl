@@ -1,0 +1,43 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v3.1.187496374)
+
+newmtl _1_-_Default-material
+Kd 0.6 0.6 0.6
+Ka 0.588235 0.588235 0.588235
+Ks 0.9 0.9 0.9
+Ke 0 0 0
+illum 1
+map_Kd Tex/mariobodyfix_alb.png
+
+newmtl _2_-_Default-material
+Kd 0.6 0.6 0.6
+Ka 0.588235 0.588235 0.588235
+Ks 0.9 0.9 0.9
+Ke 0 0 0
+illum 1
+map_Kd Tex/marioeye_alb.png
+
+newmtl _3_-_Default-material
+Kd 0.6 0.6 0.6
+Ka 0.588235 0.588235 0.588235
+Ks 0.9 0.9 0.9
+Ke 0 0 0
+illum 1
+map_Kd Tex/marioface_alb.png
+
+newmtl _4_-_Default-material
+Kd 0.6 0.6 0.6
+Ka 0.588235 0.588235 0.588235
+Ks 0.9 0.9 0.9
+Ke 0 0 0
+illum 1
+map_Kd Tex/marioshoes_alb.png
+
+newmtl _5_-_Default-material
+Kd 0.6 0.6 0.6
+Ka 0.588235 0.588235 0.588235
+Ks 0.9 0.9 0.9
+Ke 0 0 0
+illum 1
+map_Kd Tex/mariohandnew_alb.png
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>LEGO Mario</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<style>
+  body {
+	margin: 0px;
+	overflow: hidden;
+  }
+  .header {
+	display: flex;
+    margin: 10px;
+    justify-content: center;
+  }
+</style>
+
+</head>
+<body>
+	<h1 class="header">mario.js</h1>
+	<h3 class="header">Connect your LEGO® Super Mario™ figure with your browser</h3>
+
+	<div style="display: flex; justify-content: center; align-items: center;">
+		<button onclick="legoMario.scan()">scan</button>
+		<input id="message" type="text" list="example-messages">
+		<datalist id="example-messages">
+			<option value="060001120100">mute</option>
+			<option value="060001120116">volume 1</option>
+			<option value="060001120132">volume 2</option>
+			<option value="060001120148">volume 3</option>
+			<option value="060001120164">volume 4</option>
+		</datalist>
+		<button onclick="window.legoMario.send('#message')">send</button>
+		<button onclick="window.legoMario.setVolume(0)">mute</button>
+	</div>
+
+	<script src="js/3rdparty/three.min.js"></script>
+	<script src="js/3rdparty/OBJLoader.js"></script>
+	<script src="js/3rdparty/MTLLoader.js"></script>
+	<script src="js/model.js"></script>
+	<script src="js/mario.js"></script>
+	<script src="js/mario-events.js"></script>
+</body>
+</html>
