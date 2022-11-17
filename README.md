@@ -1,6 +1,6 @@
 # mario.js
 
-This simple app shows how to connect to BLE device and read some data from sensors.
+[This simple app](https://lampersky.github.io/mario.js/) shows how to connect to BLE device and read some data from sensors.
 LEGO® Super Mario™ figure has a few sensors like rgb, motion etc.
 
 ![in action](https://github.com/lampersky/mario.js/blob/main/example.gif?raw=true)
