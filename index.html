@@ -13,6 +13,7 @@
 	display: flex;
     margin: 10px;
     justify-content: center;
+	text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
   }
 </style>
 
@@ -31,8 +32,8 @@
 			<option value="060001120148">volume 3</option>
 			<option value="060001120164">volume 4</option>
 		</datalist>
-		<button onclick="window.legoMario.send('#message')">send</button>
-		<button onclick="window.legoMario.setVolume(0)">mute</button>
+		<button onclick="legoMario.send('#message')">send</button>
+		<button onclick="legoMario.setVolume(0)">mute</button>
 	</div>
 
 	<script src="js/3rdparty/three.min.js"></script>

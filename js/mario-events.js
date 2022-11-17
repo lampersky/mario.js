@@ -17,9 +17,10 @@
 	const points = { 180 : "belly", 128 : "?", 9 : "walk", 94 : "thwimp" };
 	
 	document.addEventListener('mario_event', (e) => {
-		var [rd, urd] = [e.detail.rd, e.detail.urd];
+		var [rd, urd, v1, v2] = [e.detail.rd, e.detail.urd, e.detail.v1, e.detail.v2];
 		urd.splice(0, 4);
 		const [a,b,c,d] = urd;
+		console.log(v1, v2);
 		
 		if (a == 21) {
 			console.log(`new clothes: ${clothes[c]}`);

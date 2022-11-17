@@ -107,12 +107,15 @@
 		var urd = Array.from(new Uint8Array(value.buffer));
 		var rd = Array.from(new Int8Array(value.buffer));
 		var length = urd[0];
-	
+
 		if (length == 8) {
+			var values = Array.from(new Uint16Array(value.buffer));
+			values.splice(0, 2);
+			var [v1, v2] = values;
 			if (urd[1] == 0 && urd[2] == 69 && urd[3] == 3) {
-				dispatchEvent('mario_event', { rd: rd, urd: urd });
+				dispatchEvent('mario_event', { rd: rd, urd: urd, v1: v1, v2: v2 });
 			} else {
-				dispatchEvent('mario_unknown', { rd: rd, urd: urd });
+				dispatchEvent('mario_unknown', { rd: rd, urd: urd, v1: v1, v2: v2 });
 			}
 		} else if (length == 7) {
 			const selector = urd[3] == 1 ? 'color' : (urd[3] == 0 ? 'position' : 'unknown');
