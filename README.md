@@ -13,3 +13,6 @@ You can also sniff packets between Android and Mario using Wireshark:
 ![wireshark](https://github.com/lampersky/mario.js/blob/main/wireshark.png?raw=true)
 
 enjoy!
+
+3d model is taken from:
+https://3dmag.org/en/market/download/item/4240/
